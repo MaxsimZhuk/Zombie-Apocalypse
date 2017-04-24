@@ -94,7 +94,7 @@ public class movekeybord : MonoBehaviour
 
             GameObject testGameObject = new GameObject();
             testGameObject.transform.position = transform.position;
-            testGameObject.transform.position += transform.forward * 1;
+            testGameObject.transform.position += transform.forward * 3;
             GameObject myArrov = Instantiate(Arrov, testGameObject.transform.position, transform.rotation );
             Destroy(testGameObject);
             
