@@ -52,6 +52,9 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -67,6 +70,9 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.VR">
       <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
     </Reference>
@@ -75,14 +81,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ZombieBody.cs" />
-    <Compile Include="Assets\ZombieHead.cs" />
-    <Compile Include="Assets\blood.cs" />
+    <Compile Include="Assets\newscript\CreateZombie.cs" />
+    <Compile Include="Assets\newscript\ZombieBody.cs" />
+    <Compile Include="Assets\newscript\ZombieHead.cs" />
     <Compile Include="Assets\newscript\arromove.cs" />
+    <Compile Include="Assets\newscript\blood.cs" />
     <Compile Include="Assets\newscript\gravity.cs" />
     <Compile Include="Assets\newscript\move.cs" />
     <Compile Include="Assets\newscript\movekeybord.cs" />
-    <Compile Include="Assets\shoot.cs" />
+    <Compile Include="Assets\newscript\shoot.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

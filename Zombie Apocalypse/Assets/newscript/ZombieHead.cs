@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ZombieHead : MonoBehaviour {
-    public GameObject blood;
-    public GameObject body;
-    private int Health=100;
+public class ZombieHead : MonoBehaviour
+{
+    
+    public GameObject Blood;
+
+    private int _health=100;
     // Use this for initialization
     void Start () {
 		
@@ -14,17 +16,21 @@ public class ZombieHead : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        if(!body.transform.position.x.Equals(gameObject.transform.position.x))
-        {
-            if (Health > 0)
+      
+            if (_health > 0)
             {
                 GameObject testGameObject = new GameObject();
                 testGameObject.transform.position = transform.position;
                 testGameObject.transform.position += transform.up*(float) -0.1;
-                GameObject myArrov = Instantiate(blood, testGameObject.transform.position, transform.rotation);
-                Health--;
+                GameObject myArrov = Instantiate(Blood, testGameObject.transform.position, transform.rotation);
+                _health--;
+                Destroy(testGameObject);
+                
             }
-        }
-        Debug.Log(gameObject.transform.position.x);
-	}
+         
+        
+         
+        
+   
+    }
 }

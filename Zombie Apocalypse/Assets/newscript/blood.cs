@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class blood : MonoBehaviour {
     public GameObject oldblood;
-    private int Health=50;
+    private int Health=200;
     // Use this for initialization
     void Start () {
 		
@@ -14,7 +14,7 @@ public class blood : MonoBehaviour {
 	void Update () {
         if (Health < 0)
         {
-            //GameObject myArrov = Instantiate(oldblood, transform.position, transform.rotation);
+            
             Destroy(gameObject);
         }
         else Health--;
